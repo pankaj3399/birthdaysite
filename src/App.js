@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+import ExpPanel from './ExpPanel';
 import './App.css';
+import { Box } from '@material-ui/core';
+import { Fragment } from 'react';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<Fragment>
+			<h1 className="App">Happy Birthday My Love</h1>
+			<Box className="boxpadding">
+				<ExpPanel heading={'SnapChatter Billlu'} src={'images/snaps'} />
+				<ExpPanel heading={'Cuttiee Billlu'} src={'images/cute'} />
+				<ExpPanel heading={'Happy Billlu'} src={'images/happy'} />
+				<ExpPanel heading={'Together'} src={'images/together'} />
+			</Box>
+		</Fragment>
+	);
 }
 
 export default App;
